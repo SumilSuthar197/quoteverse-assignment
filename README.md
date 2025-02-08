@@ -1,50 +1,66 @@
-# React + TypeScript + Vite
+# StampMyVisa Frontend Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+QuoteVerse is a web application designed to provide users with an engaging way to explore and discover quotes Users can browse through a paginated list of quotes retrieved from an API and generate a random quote with a simple click. Built using React, Tailwind CSS, and TypeScript. It features a seamless and responsive user experience on both desktop and mobile devices.
 
-Currently, two official plugins are available:
+You can view a live demo of the project: [https://quoteverse-sumilsuthar197.vercel.app/](https://quoteverse-sumilsuthar197.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features Implemented
 
-## Expanding the ESLint configuration
+- **Paginated Quote List**: a list of quotes with pagination controls, allowing users to navigate through different sets of quotes efficiently enhancing readability and improve performance.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Random Quote Generator**: Fetches and displays a randomly selected quote on button click. This feature provides users with a unique and spontaneous quote experience every time they use it.
 
-- Configure the top-level `parserOptions` property like this:
+- **Favorite Quotes**: Users can star their favorite quotes and view them later on Favorites page. This feature enables users to save and revisit their most inspiring quotes conveniently.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Responsiveness**: The application is responsive and works well on various screen sizes, ensuring a consistent user experience across devices
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- **Dynamic Theme Switching**: Allows users to seamlessly toggle between Light and Dark modes for a personalized viewing experience.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Tech Stack
+
+- React.js
+- Tailwind CSS
+- JavaScript
+
+## Installation
+
+Follow these steps to set up the QuoteVerse application on your local machine:
+
+1. **Clone the Repository:**
+
+    ```bash
+    git clone https://github.com/SumilSuthar197/quoteverse-assignment.git
+    ```
+
+2. **Navigate to the Project Directory:**
+
+    ```bash
+    cd quoteverse-assignment
+    ```
+
+3. **Install Dependencies:**
+
+    Install the necessary dependencies for the project:
+
+    ```bash
+    npm install
+    ```
+
+4. **Run the Development Server:**
+
+    Start the Next.js development server:
+
+    ```bash
+    npm run dev
+    ```
+
+    After running this command, the application will be available locally at [http://localhost:5173](http://localhost:5173).
+
+## Screenshots
+
+### Home Page
+![quoteverse-sumilsuthar197 vercel app_](https://github.com/user-attachments/assets/d355def2-3a58-44ad-ad2e-273dcd969107)
+
+### Favorite Quotes Page
+![quoteverse-sumilsuthar197 vercel app_ (1)](https://github.com/user-attachments/assets/cf1d8506-a12b-4e2d-8a1d-b5fa506314ae)
