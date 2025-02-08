@@ -1,8 +1,5 @@
 import { ImSpinner8 } from "react-icons/im";
-
-type MessageProps = {
-  message: string;
-};
+import { MessageProps } from "../../app.type";
 
 export function Loading({ message }: MessageProps) {
   return (

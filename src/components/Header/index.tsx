@@ -1,6 +1,7 @@
 import { IoMoon, IoSunny } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import useTheme from "../../context/theme";
+
 const ToggleComponent = () => {
   const { themeMode, darkTheme, lightTheme } = useTheme();
 
@@ -11,6 +12,7 @@ const ToggleComponent = () => {
       darkTheme();
     }
   };
+  
   return (
     <>
       <input

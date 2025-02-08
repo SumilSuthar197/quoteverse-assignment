@@ -1,15 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaStar } from "react-icons/fa";
-
-type Quote = {
-  id: number;
-  quote: string;
-  author: string;
-}
-type QuoteProps = {
-  quote: Quote,
-  fetchFavorites?: () => void;
-};
+import { Quote, QuoteProps } from "../../app.type";
 
 const QuoteCard = ({ quote, fetchFavorites }: QuoteProps) => {
   const [isFavorite, setIsFavorite] = useState(false);

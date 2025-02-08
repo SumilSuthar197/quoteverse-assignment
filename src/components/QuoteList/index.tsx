@@ -3,12 +3,7 @@ import Card from "../Card";
 import { Loading } from "../Loading";
 import { ErrorMessage } from "../ErrorMessage";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-
-type Quote = {
-  id: number;
-  quote: string;
-  author: string;
-};
+import { Quote } from "../../app.type";
 
 const QuoteList = () => {
   const [quotes, setQuotes] = useState<Quote[]>([]);
@@ -23,11 +18,11 @@ const QuoteList = () => {
     setError(null);
     try {
       const response = await fetch(
-        `https://dummyjson.com/quotes?limit=${limit}&skip=${(page-1)*limit}`
+        `https://dummyjson.com/quotes?limit=${limit}&skip=${(page - 1) * limit}`
       );
       const data = await response.json();
       setQuotes(data.quotes);
-      setTotalPages(Math.ceil(data.total / limit)); 
+      setTotalPages(Math.ceil(data.total / limit));
     } catch (err) {
       setError("An error occurred while fetching quotes. Please try again.");
     } finally {

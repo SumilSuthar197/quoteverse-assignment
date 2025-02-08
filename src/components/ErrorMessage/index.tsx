@@ -1,8 +1,5 @@
 import { RiErrorWarningFill } from "react-icons/ri";
-
-type MessageProps = {
-  message: string;
-};
+import { MessageProps } from "../../app.type";
 
 export function ErrorMessage({ message }: MessageProps) {
   return (

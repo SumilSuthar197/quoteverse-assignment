@@ -3,12 +3,7 @@ import Card from "../Card";
 import { FaSyncAlt } from "react-icons/fa";
 import { Loading } from "../Loading";
 import { ErrorMessage } from "../ErrorMessage";
-
-type Quote = {
-  id: number;
-  quote: string;
-  author: string;
-};
+import { Quote } from "../../app.type";
 
 const RandomQuote = () => {
   const [quote, setQuote] = useState<Quote | null>(null);

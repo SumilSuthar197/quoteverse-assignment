@@ -2,12 +2,7 @@ import { useEffect, useState } from "react";
 import Card from "../components/Card";
 import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
-type Quote = {
-    id: number;
-    quote: string;
-    author: string;
-};
+import { Quote } from "../app.type";
 
 const StarPage = () => {
     const [quotes, setQuotes] = useState<Quote[]>([]);
