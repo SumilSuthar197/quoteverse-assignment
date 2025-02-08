@@ -21,7 +21,7 @@ You can view a live demo of the project: [https://quoteverse-sumilsuthar197.verc
 
 - React.js
 - Tailwind CSS
-- JavaScript
+- TypeScript
 
 ## Installation
 
